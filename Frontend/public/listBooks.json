@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Aptitude",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+        "price": 10,
+        "category": "Free",
+        "image": "https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Feature.jpg?fit=569%2C509&ssl=1"
+
+    },
+    {
+        "id": 2,
+        "name": "Aptitude",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+        "price": 10,
+        "category": "Free",
+        "image": "https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Feature.jpg?fit=569%2C509&ssl=1"
+
+    },
+    {
+        "id": 3,
+        "name": "Aptitude",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+        "price": 10,
+        "category": "Free",
+        "image": "https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Feature.jpg?fit=569%2C509&ssl=1"
+
+    },
+    {
+        "id": 4,
+        "name": "Aptitude",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+        "price": 10,
+        "category": "Free",
+        "image": "https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Feature.jpg?fit=569%2C509&ssl=1"
+
+    },
+    {
+        "id": 5,
+        "name": "Aptitude",
+        "title": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, et totam.",
+        "price": 10,
+        "category": "Free",
+        "image": "https://i0.wp.com/apeejay.news/wp-content/uploads/2023/10/281023-10-most-read-books-Feature.jpg?fit=569%2C509&ssl=1"
+    }
+]
