@@ -41,12 +41,28 @@
 
 
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card";
-import list from "../../public/Pricing.json";
+import axios from "axios";
+// import list from "../../public/Pricing.json";
 
 function Course() {
+  const [book, setBook] = useState([]);
+  useEffect(() => {
+    const getBook = async () => {
+      try {
+        const res = await axios.get("http://localhost:3001/book");
+        console.log(res.data);
+        setBook(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getBook();
+  }, []);
+  // console.log(book);
+  
   return (
     <div>
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
@@ -69,8 +85,8 @@ function Course() {
 
         {/* Responsive Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-10">
-          {list.map((items) => (
-            <Card key={items.id} items={items} />
+          {book.map((items, index) => (
+            <Card key={items.id || index} items={items} />
           ))}
         </div>
       </div>

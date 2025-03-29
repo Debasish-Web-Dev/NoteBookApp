@@ -394,8 +394,14 @@
 import React, { useEffect, useState } from "react";
 import image from "../../public/notebook.gif";
 import { useNavigate } from "react-router-dom";
+import Logout from "./Logout";
+import { useAuth } from "../context/AuthProvider";
 
 function Navbar() {
+
+    const [authUser, setAuthUser] = useAuth();
+    console.log(authUser);
+    
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const navigate = useNavigate();
@@ -484,6 +490,10 @@ function Navbar() {
                             placeholder="Search"
                         />
                     </div>
+
+
+                    {
+                        authUser?<Logout/>:
                     <div className="relative group">
                         <button
                             onClick={() => navigate("/login")}
@@ -495,6 +505,8 @@ function Navbar() {
                             Login
                         </button>
                     </div>
+                    }
+
 
                    
 

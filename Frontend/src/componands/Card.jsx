@@ -88,21 +88,71 @@
 
 
 
+// function Card({ items }) {
+//     return (
+//         <div>
+//             <div className="flex flex-wrap justify-center gap-6 p-10">
+//                 <div
+//                     className={`w-80 p-6 rounded-2xl shadow-lg text-center transition-transform duration-300 hover:scale-105 bg-gradient-to-b ${items.gradient}`}
+//                 >
+//                     <div className="text-5xl">{items.icon}</div>
+//                     <h2 className="text-white text-2xl font-bold mt-4">{items.title}</h2>
+//                     <p className="text-gray-100 mt-2">{items.description}</p>
+//                     <h3 className="text-white text-3xl font-bold mt-4">{items.price}</h3>
+//                     <button className="mt-6 bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
+//                         Buy Now
+//                     </button>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default Card;
+
+
+// function Card({ items }) {
+//     return (
+//         <div className="flex justify-center p-4">
+//             <div
+//                 className={`w-80 p-6 rounded-2xl shadow-lg text-center transition-transform duration-300 hover:scale-105 bg-gradient-to-b ${items.gradient}`}
+//             >
+//                 <div className="text-5xl">{items.icon}</div>
+//                 <h2 className="text-white text-2xl font-bold mt-4">{items.title}</h2>
+//                 <p className="text-white mt-2">{items.description}</p>
+//                 <h3 className="text-white text-3xl font-bold mt-4">{items.price}</h3>
+//                 <button className="mt-6 bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
+//                     Buy Now
+//                 </button>
+//             </div>
+//         </div>
+//     );
+// }
+
+// export default Card;
+
+
 function Card({ items }) {
+    // Define gradient colors based on the title
+    const gradientColors = {
+        "Basic": "from-blue-500 to-blue-300",
+        "Standard": "from-purple-500 to-purple-300",
+        "Premium": "from-pink-500 to-pink-300",
+    };
+
     return (
-        <div>
-            <div className="flex flex-wrap justify-center gap-6 p-10">
-                <div
-                    className={`w-80 p-6 rounded-2xl shadow-lg text-center transition-transform duration-300 hover:scale-105 bg-gradient-to-b ${items.gradient}`}
-                >
-                    <div className="text-5xl">{items.icon}</div>
-                    <h2 className="text-white text-2xl font-bold mt-4">{items.title}</h2>
-                    <p className="text-gray-100 mt-2">{items.description}</p>
-                    <h3 className="text-white text-3xl font-bold mt-4">{items.price}</h3>
-                    <button className="mt-6 bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
-                        Buy Now
-                    </button>
-                </div>
+        <div className="flex justify-center p-4">
+            <div
+                className={`w-80 p-6 rounded-2xl shadow-lg text-center transition-transform duration-300 hover:scale-105 
+                bg-gradient-to-b ${gradientColors[items.title] || "from-gray-500 to-gray-300"} text-white`}
+            >
+                <div className="text-5xl">{items.icon}</div>
+                <h2 className="text-white text-2xl font-bold mt-4">{items.title}</h2>
+                <p className="text-white mt-2">{items.description}</p>
+                <h3 className="text-white text-3xl font-bold mt-4">{items.price}</h3>
+                <button className="mt-6 bg-white text-gray-800 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition duration-300">
+                    Buy Now
+                </button>
             </div>
         </div>
     );
