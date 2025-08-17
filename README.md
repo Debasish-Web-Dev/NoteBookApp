@@ -39,7 +39,7 @@ A full-stack **Note-Taking Application** with **user authentication** and **CRUD
 ---
 
 ### Project Structure
-
+```bash
 NoteBookApp/
 │── Backend/              # Express + MongoDB server
 │   ├── models/           # Mongoose models (e.g., User, Notes)
@@ -57,35 +57,35 @@ NoteBookApp/
 │   └── vite.config.js    # Vite config
 │
 └── README.md             # Project documentation
-
+```
 
 ---
 
 ## 📌 Usage
 
--Register a new account or login.
--Create, edit, delete, and view notes.
--Search or filter notes for quick access.
--Upload images/files with notes (if enabled).
+- Register a new account or login.
+- Create, edit, delete, and view notes.
+- Search or filter notes for quick access.
+- Upload images/files with notes (if enabled).
 
 ---
 
 ## 🎯 Expected Outcomes
 
--Secure authentication system
--User-friendly interface
--Efficient note management
--Scalability for future enhancements
+- Secure authentication system
+- User-friendly interface
+- Efficient note management
+- Scalability for future enhancements
 
 ---
 
 ## 🔮 Future Scope
 
--🌙 Dark mode support
--📂 Categorization / Tagging of notes
--👥 Collaborative note sharing
--🔔 Notifications & reminders
--📲 Mobile app version (React Native)
+- 🌙 Dark mode support
+- 📂 Categorization / Tagging of notes
+- 👥 Collaborative note sharing
+- 🔔 Notifications & reminders
+- 📲 Mobile app version (React Native)
 
 ## 🚀 Installation & Setup
 
@@ -93,3 +93,4 @@ NoteBookApp/
 ```bash
 git clone https://github.com/Debasish-Web-Dev/NoteBookApp.git
 cd NoteBookApp
+```
